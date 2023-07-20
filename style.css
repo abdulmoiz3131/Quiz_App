@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: skyblue;
+}
+
+#questionBox {
+    width: 50%;
+    /* height: 50%; */
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+#question {
+    margin: 20px 10px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.row {
+    width: 100%;
+    margin: 20px 10px;
+
+}
+
+.row1 {
+    width: 100%;
+
+}
+
+.row label {
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    margin: 10px 0px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(37, 168, 220);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width:720px) {
+
+    #questionBox {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:520px) {
+
+
+    #questionBox {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:360px) {
+    #question {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width:260px) {
+    #question {
+        margin: 0px;
+    }
+}
